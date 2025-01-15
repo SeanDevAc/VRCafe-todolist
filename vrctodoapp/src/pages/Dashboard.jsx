@@ -5,8 +5,11 @@ import NavBar from '../components/NavBar';
 const Dashboard = () => {
     return (
         <div>
-            <NavBar />
-            <p>Hello World</p>
+            <header><NavBar /></header>
+            <body>
+                <p>Hello World</p>
+            </body>
+            
         </div>
     );
 };
