@@ -5,8 +5,11 @@ import logo from '../assets/img/vrcafe_logo.webp';
 const NavBar = () => {
     return (
         <div>
-            <img src={logo} alt="VR Cafe Logo" />
-            <p>navbar</p>
+            <div className="navBarBackgroundTop"></div>
+            <a href="https://www.vrcafehaarlem.nl/">
+                <img src={logo} alt="VR Cafe Logo" className="logo" />
+            </a>
+            <div className="navBarBackgroundBottom"></div>
         </div>
     );
 };

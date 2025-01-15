@@ -1,11 +1,16 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from './pages/Dashboard';
+import FallBackPage from './pages/FallBackPage';
 
 function App() {
   return (
-    <div className="App">
-      <Dashboard/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="*" element={<FallBackPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
