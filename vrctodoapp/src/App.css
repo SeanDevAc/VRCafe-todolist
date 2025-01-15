@@ -5,17 +5,34 @@
   --buttons: #39f1a9;
   --buttonsHover: #d03d85;
   --textColor: #fff;
+  --secondaryTextColor: #000;
 }
 
 .App {
   font-family: "Rubik", serif;
 }
 
-.navBarWrapper{
+.navBarBackgroundTop{
   display: flex;
   background-color: var(--secondary);
   flex-direction: row;
   height: 10vh;
+}
+
+.navBarBackgroundBottom{
+  display: flex;
+  opacity: 100%;
+  flex-direction: row;
+  height: 5vh;
+}
+
+button{
+  border-style: none;
+  background-color: var(--buttons);
+  color: var(--secondaryTextColor);
+  padding: 2vw;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .logo{
